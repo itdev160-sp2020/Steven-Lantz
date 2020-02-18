@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Activity 2</title><!--Displays on tab of page-->
+</head>
+<!--Everything above is meta-data; doesn't display on page itself-->
+<body>
+    <h1 id="top" style="text-decoration: underline;">My Favorite Headphones</h1><!--Use id to link to top of page-->
+    <table id="simple-table" border="3" cellspacing="3">
+        <tr>
+            <th bgcolor="#800080">Model</th>
+            <th bgcolor="#800080">URL</th>
+        </tr>
+        <tr>
+            <td>Focal Utopia</td>
+            <td><a href="https://www.focal.com/en/headphones-0/headphones/for-home/utopia">
+                Focal Utopia Headphones</a></td>
+        </tr>
+        <tr>
+            <td>ZMF Eikon</td>
+            <td>
+                <a href="https://www.zmfheadphones.com/zmf-originals/zmf-eikon">ZMF Eikon Headphones</a>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <img src="images/image 1.jpg" width="200" height="200" style="padding-left: 200px" alt="Picture of a city at night"/><!--Image that I added-->
+    <br />
+    <br />
+    <table id="complex-table" border="1" cellspacing="3">
+        <thead>
+          <tr>
+            <th bgcolor="#008080">Features</th>
+            <th bgcolor="#008080" scope="column">Plays Sound</th>
+            <th bgcolor="#008080" scope="column">Open Back</th>
+            <th bgcolor="#008080" scope="column">Insanely Expensive</th>
+            <th bgcolor="#008080" scope="column">I Own</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">Focal Utopia</td>
+                <td colspan="3">Yes</td>
+                <td rowspan="2">No</td>
+            </tr>
+            <tr>
+                <td scope="row">ZMF Eikon</td>
+                <td>Yes</td>
+                <td colspan="2">Yes</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="5" bgcolor="blue">&copy; Steve Lantz 2020</td>
+        </tfoot>
+    </table>
+    <br />
+    <a href="mailto:lantzs@gmatc.matc.edu">Shoot Me A Message</a>
+    <br />
+    <br />
+    <footer>
+        <a href="../index.html">Home</a>
+        <br />
+        <br />
+        <a href="../activity-1/index.html">Assignment 1</a>
+    </footer>
+    <br />
+    <a href="#top">Top</a><!--Takes user to top of page-->
+</body>
+</html>
