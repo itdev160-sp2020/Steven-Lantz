@@ -16,17 +16,24 @@ figcaption span{
 }
 #product-description{
     margin: 20px 0 20px 0;
-    text-align: justify;
+    text-align:justify;
 }
 div.review{
     padding: 10px;
     background-color: #eee;
     margin: 20px 0 20px 0;
+    
+}
+div.hover{
+    width: 400px;
 }
 .assign{
     background-color: rgb(184, 34, 34);
     color: #222;
+    
 }
 a.assign:hover{
     color:pink;
+    transition: 3s;
+    transform: 
 }
