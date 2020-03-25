@@ -1,3 +1,4 @@
+//Activity 4
 //Welcome message
 var user = 'Steve. ';
 var salutation = 'Hello, ';
