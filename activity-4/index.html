@@ -13,28 +13,29 @@
             <h2 id="greeting"></h2><!--id helps us reference in javascript-->
         </header>
         <main>
-            <figure>
-                <img src="images/atom.jfif" alt="Atom Logo">
+            <figure >
+                <img src="images/atom.jfif"  alt="Atom Logo">
                 <figcaption>
                     Atom - <span>A hackable text editor for the 21st Century</span>
                 </figcaption>
             </figure>
+            <button id="button" onclick="changeText()" onclick="changeBack()">Click Here</button>
             <p id ="product-description">
                 Atom is a text editor that's modern, approachable, yet hackable to the core- a tool
                 you can customize to do anything but also use productively without ever touching a config file.
             </p>
             <p>Price: $<span id="price"></span></p>
-            <p>Student Price: $<span id="student-price"></span></p>
+            <p>Student Price: $<span id="student-price"></span></p><!--span is an inline element.  It's similar to div but div deals with blocks-->
             <h2>User Reviews</h2>
             <div class="review">
                 <h3>Mike H.</h3>
                 <p>Atom is the best editor ever.  So much better than Brackets!</p>
             </div>
             <div class="review">
-                <h3>Nick R.</h3>
+                <h3 id ="nick">Nick R.</h3>
                 <p>Atom is soooo awful.  Who would ever use this pos?!! I copy and past from Brackets</p>
             </div>
-            <div class="review">
+            <div class="review"> 
                 <h3>Jeff M.</h3>
                 <p>I guess it's an ok editor.  I like Brackets too.  Why can't I use both?</p>
             </div>
@@ -51,6 +52,6 @@
             <br />
             &copy; Steve Lantz 2020
         </footer>
-        <script src="js/scripts.js"></script><!--Always put js link here, before body-->
+        <script src="js/scripts.js"></script><!--Always put js link here, before end of body-->
     </body>
 </html>

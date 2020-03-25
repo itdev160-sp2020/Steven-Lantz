@@ -10,7 +10,7 @@ h1{
 img{
     margin-left: 0;
     height: 100px;
-    /*text-align: left;*/
+    text-align: left;
 }
 figcaption span{
     font-size: .85em;
@@ -36,5 +36,5 @@ div.hover{
 a.assign:hover{
     color:pink;
     transition: 3s;
-    transform: 
+    transform: 3s;
 }
