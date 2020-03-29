@@ -15,3 +15,23 @@ width: 100%;
 main{
     margin: 0 40% 0 150px;
 }
+.links{
+    text-decoration: none;
+     transition: 2s; 
+     
+    
+}
+
+
+a.links:visited{
+    color: blue;
+}
+
+.links:hover{
+      
+    color: red;
+    font-size: 2em;
+  border-style: ridge;
+    font-style: initial;
+
+}

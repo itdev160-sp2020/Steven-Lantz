@@ -29,10 +29,10 @@ var data = [
     },
     {
         name: '2. Git Lens',
-        description: 'The Git Lens extension is truly amazing, it enables you to visualize' 
-        + 'code authorship within VS Code. You can browse and explore the history of a file,' 
+        description: 'The Git Lens extension is truly amazing, it enables you to visualize ' 
+        + 'code authorship within VS Code. You can browse and explore the history of a file, ' 
         +'view a git blame annotation for each file line, and even add a changes (diff) hover annotation,' 
-        + 'all of which are fully customizable.',
+        + ' all of which are fully customizable.',
         author: 'Author: Eric Amodio',
         url: 'https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens',
         downloads: 'Downloads: ' + 4670279,
@@ -44,7 +44,7 @@ var data = [
     {
         name: '3.' + ' Path Intellisense',
         description: 'The Path Intellisense extension helps to autocomplete filenames. Super useful' 
-        + 'when writing out paths in markup, or in any file that has path references',
+        + ' when writing out paths in markup, or in any file that has path references.',
         author: 'Author: Christian Kohler',
         url: 'https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense',
         downloads: 'Downloads: ' + 2725757,
@@ -89,6 +89,11 @@ var getTodaysDate = function (){
     return today.toDateString();
 };
 
+var getHour = function(){
+    var time = new Date();
+    var n = time.getHours() +":" + time.getMinutes() + ":" + time.getSeconds();
+    return n;
+}
 //Returns DOM element by id
 var getEl = function (id){
     return document.getElementById(id);
@@ -128,6 +133,10 @@ var writePackageInfo = function (package){
 //Write date
 dateEl = document.getElementById('date');
 dateEl.textContent = getTodaysDate();
+
+//Write time
+timeEl = document.getElementById('time');
+timeEl.textContent = getHour();
 /*
  *Write package data 
  * 
