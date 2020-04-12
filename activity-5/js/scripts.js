@@ -18,7 +18,7 @@ var data = [
     {
         name:'1. HTML Snippets',
         description: 'HTML Snippets adds in rich language support for HTML markup,' 
-        + 'including snippets, quick info, and descriptions that include whether a tag is deprecated.' 
+        + ' including snippets, quick info, and descriptions that include whether a tag is deprecated.' 
         ,
         author: 'Author: Mohamed Abusaid',
         url:'https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets',
@@ -65,7 +65,7 @@ function Package(data){
     this.selector = data.selector;
 
     this.getFormattedDownloads = function (){
-        return this.downloads.toLocaleString();
+        return formatNumber(this.downloads);
     };
 
     this.getFormattedStars = function (){
@@ -77,6 +77,11 @@ function Package(data){
     }
 }
 
+//Adds commas to large numbers
+//Found this on stack overflow
+function formatNumber(num) {
+        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+    }
 
 
 /*****************************************

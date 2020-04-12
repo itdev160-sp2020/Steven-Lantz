@@ -28,3 +28,15 @@ a.links:visited{
       border-style: ridge;
       font-style: initial;
 }
+header h1{
+    margin-top: 40px;
+    text-align: center;
+    color:cornflowerblue;
+}
+#foot{
+    text-align: center;
+    padding:0;
+    margin: 0 -30px 0 -30px;
+    color:blue;
+    background-color: cornflowerblue;
+}
