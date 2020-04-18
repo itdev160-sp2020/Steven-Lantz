@@ -105,7 +105,7 @@ var getEl = function (id){
 }
 
 /*
-*Write's the package object's data to the appropriate
+*Writes the package object's data to the appropriate
 *DOM elements utilizing the package selector property.
 *@param {Package} package Package object
 *@return {void}
