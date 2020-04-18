@@ -1,0 +1,44 @@
+main, header, footer{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.messages{
+    margin-bottom: 20px;
+}
+.out-message{
+    padding: 5px;
+    background-color: lightblue;
+}
+.in-message{
+    padding: 5px;
+    background-color: lightseagreen;
+}
+#send-button{
+    background-color:blanchedalmond;
+    padding: 5px;
+    border-radius:  0 10px 0 10px;
+    box-shadow: 2px 2px black;
+}
+#reply-button{
+    background-color:cornflowerblue;
+    padding: 5px;
+    border-radius:  10px 0 10px 0;
+    box-shadow: 2px 2px black;
+    margin-left: 5px;
+}
+body h1{
+    font-size: 3.2em;
+    color:darkseagreen;
+    text-shadow: 4px 2px black;
+}
+main{
+    padding-bottom: 20px;
+    border-bottom: solid;
+}
+footer{
+    padding-left: 632px;
+}
+#cat{
+    position: absolute;
+    left: 0px;
+}

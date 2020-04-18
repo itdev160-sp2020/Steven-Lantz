@@ -1,0 +1,49 @@
+<!--Activity 6-->
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Chat App in the World!</title>
+    <!--appears on tab of webpage-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <!--link to google fonts-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>My Sweet Chat App</h1>
+    </header>
+    <main>
+        <section id="message-container" class="messages"></section>
+        <section>
+            <input type="text" id="message-input">
+            <button type="button" id="send-button">Send</button>
+            <button type="button" id="reply-button">Reply</button>
+        </section>
+    </main>
+    <footer><p>Steve Lantz &copy; 2020 MATC</p></footer>
+    <div id="picture">
+        <img id="cat" src="images/cat.jpg" alt="Reddit cat meme">
+    </div>
+    <script>
+        var catEl = document.getElementById("cat");
+
+        var startTime = new Date().getTime();
+        var walkTheCat = function () {
+            var currTime = new Date().getTime();
+            var secondsElapsed = ((currTime - startTime) / 1000);
+            var newLeft = 0 + secondsElapsed * 80;//Moves 80px a second to the right from css property 'left'
+            catEl.style.left = newLeft + "px";
+            if (newLeft < 500) {
+                window.requestAnimationFrame(walkTheCat);
+            }
+        };
+        walkTheCat();
+    </script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+</body>
+</html>
