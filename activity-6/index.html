@@ -29,21 +29,7 @@
     <div id="picture">
         <img id="cat" src="images/cat.jpg" alt="Reddit cat meme">
     </div>
-    <script>
-        var catEl = document.getElementById("cat");
-
-        var startTime = new Date().getTime();
-        var walkTheCat = function () {
-            var currTime = new Date().getTime();
-            var secondsElapsed = ((currTime - startTime) / 1000);
-            var newLeft = 0 + secondsElapsed * 80;//Moves 80px a second to the right from css property 'left'
-            catEl.style.left = newLeft + "px";
-            if (newLeft < 500) {
-                window.requestAnimationFrame(walkTheCat);
-            }
-        };
-        walkTheCat();
-    </script>
+    
     <script src="js/scripts.js" charset="utf-8"></script>
 </body>
 </html>
