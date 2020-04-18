@@ -135,7 +135,7 @@ var walkTheCat = function () {
     var secondsElapsed = ((currTime - startTime) / 1000);
     var newLeft = 0 + secondsElapsed * 80;//Moves 80px a second to the right from css property 'left'
     catEl.style.left = newLeft + "px";
-    if (newLeft < 800) {
+    if (newLeft < 900) {
         window.requestAnimationFrame(walkTheCat);
     }
 };
