@@ -1,0 +1,27 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: auto 30px;
+    color: #555;
+
+}
+ul{
+    border: solid 1px #555;
+    margin: 0;
+    max-width: 50%;
+}
+li{
+    padding: 5px;
+    background-color: yellow;
+}
+#todo-list-container{
+    max-width: 50%;
+    margin-top: 20px;
+    
+}
+#completed-list{
+    list-style-type: none;
+}
+#completed-list li{
+    text-decoration: line-through;
+    font-weight: 900;
+}
