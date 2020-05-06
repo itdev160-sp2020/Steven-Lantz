@@ -16,7 +16,6 @@ li{
 #todo-list-container{
     max-width: 50%;
     margin-top: 20px;
-    
 }
 #completed-list{
     list-style-type: none;
@@ -24,4 +23,20 @@ li{
 #completed-list li{
     text-decoration: line-through;
     font-weight: 900;
+}
+#add-task{
+    font-weight: 900;
+    width: 150px;
+    height: 50px;
+    background-color: orangered;
+    border-radius: 60px 0 60px 0;
+    text-shadow: 2px 2px powderblue;
+    box-shadow: 4px 4px burlywood;
+}
+#input-task{
+    padding-left: 100px;
+}
+#active-tasks{
+    text-shadow: 3px 3px blueviolet;
+    font-size: 50px;
 }

@@ -94,6 +94,7 @@ var getTodaysDate = function (){
     return today.toDateString();
 };
 
+//Return current time
 var getHour = function(){
     var time = new Date();
     var n = time.getHours() +":" + time.getMinutes() + ":" + time.getSeconds();

@@ -3,7 +3,10 @@
 //Array to hold tasks
 var tasks = [];
 
-//Task status 'emum'
+//Title for active tasks
+var titleEl = document.getElementById('active-tasks');
+
+//Task status 'enum'
 var taskStatus = {
     active: 'active',
     completed: 'completed'
@@ -19,6 +22,7 @@ function Task (id, name, status){
 //Creates new task element and adds it to the DOM
 function addTaskElement (task) {
     //Create elements
+    
     var listEl = document.getElementById('active-list');
     var taskEl = document.createElement('li');
     var textEl = document.createTextNode(task.name);
@@ -26,16 +30,23 @@ function addTaskElement (task) {
     //Set attributes
     taskEl.setAttribute('id', task.id);
 
+
     //Add text to task element
     taskEl.appendChild(textEl);
 
     //Add task element to list
     listEl.appendChild(taskEl);
+
+    if (listEl.innerText != '') {
+        //Add title to active tasks
+        titleEl.innerText = "Active Tasks";
+    } 
 }
 
 //Click handler to add a new task
 function addTask(event){
     var inputEl = document.getElementById('input-task');
+    
     if(inputEl.value != ''){
         //Create unique id
         var id = 'item-' + tasks.length;
@@ -52,11 +63,12 @@ function addTask(event){
     }
 }
 
-//Click handler to complete a task
+//Click handler to add task to completed list
 function completeTask (event){
     //Get the task element
     var taskEl = event.target;
     var id = taskEl.id;
+    var completeEl = document.getElementById('completed-tasks')
 
     //Find corresponding task in tasks array and update status
     for(var i = 0; i < tasks.length; i++){
@@ -65,15 +77,33 @@ function completeTask (event){
             break;
         }
     }
-
+    
     //Move task element from active list to completed list
     taskEl.remove();
+    
     document.getElementById('completed-list').appendChild(taskEl);
 
+    //Add title to completed tasks
+   if(taskEl != ''){
+    completeEl.innerText = "Completed Tasks";
+   }
 
-}
+   /*Removes title of Active Tasks when all the tasks from that list 
+   *status changes to 'completed'*/
+    var j = 0;
+    //Increment j for every item in the tasks array that has been labeled 'completed'
+    for (let i = 0; i < tasks.length; i++) {
+        if (tasks[i].status == taskStatus.completed) {
+            j++;
+        }
+    }
+    //If all the tasks have been completed, remove title for 'Active Tasks'
+    if (j == tasks.length)
+        titleEl.innerText = '';
+}//End of completeTask
 
 //Key press handler to automatically click add task button
+//Press enter to click add task button
 function clickButton(event) {
     if (event.keyCode === 13) {
         document.getElementById('add-task').click();
@@ -93,3 +123,6 @@ function init(){
 }
 
 init();
+function popUpMessage(){
+    alert('This is a message pop up');
+}
