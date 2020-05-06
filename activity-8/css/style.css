@@ -1,0 +1,110 @@
+/*Activity 8*/
+
+/*Main Styles*/
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    margin: 0;
+}
+
+header{
+    
+    padding:5px;
+    color: #efefef;
+    background-color: #2D2D2D;
+    border-bottom: solid 1px #000;
+}
+header .header-title{
+    display: inline-block;
+    text-align: center;
+}
+#new-button{
+    margin-right: 46.5%;
+    padding: 5px 50px 5px 50px;
+    background-color: yellow;
+    border-radius: 50px 0 50px 0;
+}
+header .header-menu{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #777;
+    font-size: smaller;
+    
+}
+
+main{
+    background-image: url(../images/maxresdefault.jpg);
+    background-size: 100% 100%;
+    
+    flex: 1;
+}
+main #display-content{
+    padding: 20px;
+    margin-right: 70%;
+   
+   
+}
+
+/*Modal Styles*/
+#modal-backdrop{
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .75);
+    
+}
+#modal-backdrop.visible{
+    display: block;
+    
+}
+.modal{
+    display: none;
+    position: absolute;
+    padding: 10px;
+    border: solid 1px #555;
+    background-color:rgb(25, 123, 136);
+    z-index: 99999;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ 
+}
+.modal.visible{
+    display: block;
+     
+}
+.modal-content{
+    width: 300px;
+    height: 300px;
+      
+}
+#edit-title{
+    width: 300px;
+    
+}
+#edit-content-text{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: slategray;
+   
+}
+header{
+    text-align: center;
+    color: blue;
+}
+footer{
+    background-color: yellow;
+    text-align: right;
+    padding-right: 20px;
+}
+#click{
+   
+}
