@@ -1,4 +1,4 @@
-//Activity 7
+//Activity 7*
 
 //Array to hold tasks
 var tasks = [];
