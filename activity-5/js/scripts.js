@@ -85,7 +85,7 @@ function formatNumber(num) {
 
 
 /*****************************************
- * Utility functions
+ * Utility functions*
  ****************************************/
 
 //Return today's date, formatted
