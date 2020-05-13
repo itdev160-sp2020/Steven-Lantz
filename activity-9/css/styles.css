@@ -4,6 +4,7 @@ body{
     min-height: 100vh;
     flex-direction: column;
     font-family: "Open Sans", sans-serif;
+    background-color: rgb(73, 192, 201);
 }
 main{
     display: flex;
@@ -58,4 +59,9 @@ blockquote: after{
 }
 .author:before{
     content: '-';
+}
+#footer{
+    text-align: right;
+    padding-right: 20px;
+    
 }
